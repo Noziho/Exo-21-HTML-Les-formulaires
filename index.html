@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+</head>
+
+<body>
+    <div>
+        <form action="#" method="get">
+            <div>
+                <fieldset>
+                    <legend>Informations personnelles:</legend>
+                    <div>
+                        <label for="Nom">Entrez votre nom:</label>
+                        <input type="text" id="Nom" name="user_familyName">
+                    </div>
+
+                    <div>
+                        <label for="Prenom">Entrez votre prénom:</label>
+                        <input type="text" id="Prenom" name="user_firstname">
+                    </div>
+
+                    <div>
+                        <label for="date">Entrez votre date de naissance</label>
+                        <input type="date" id="date" name="user_birthday">
+                    </div>
+
+                    <div>
+                        <label for="MDP">Entrez votre password:</label>
+                        <input type="password" id="MDP" name="user_password">
+                    </div>
+
+                    <div>
+                        <input type="radio" name="sexe">Homme
+                        <input type="radio" name="sexe">Femme
+                        <input type="radio" name="sexe">Autre
+                    </div>
+                </fieldset>
+                
+                <div>
+                    <label for="couleur">Choisissez une couleur:</label>
+                    <input type="color" id="couleur" name="user_color">
+                </div>
+                
+                <div>
+                    <label for="FavoriteGame">Choisissez vos jeux favoris:</label>
+                    <select name="user_games" id="FavoriteGame" multiple size="3">
+                        <option value="Call of">Call of duty</option>
+                        <option value="New World">New World</option>
+                        <option value="Terra">Terra</option>
+                        <option value="Rocket League">Rocket League</option>
+                        <option value="The Division">The division</option>
+                        <option value="The division 2">The division 2</option>
+                        <option value="WoW">World of Warcraft</option>
+                        <option value="Rappelz">Rappelz</option>
+                        <option value="Vermintide II">Vermintide II</option>
+                        <option value="Overwatch">Overwatch</option>
+                    </select>
+                </div>
+
+                <div>
+                    <p>Aimez vous notre site:</p>
+                    <label for="Oui">Oui</label>
+                    <input type="checkbox" id="Oui" value="Oui" name="user_choice">
+                    <label for="Non">Non</label>
+                    <input type="checkbox" id="Non" value="Non" name="user_choice">
+                    <label for="Autre">Autre</label>
+                    <input type="checkbox" id="Autre" value="Autre" name="user_choice">
+                </div>
+
+                <div>
+                    <button type="submit" name="user_submit">
+                        <a href="mailto:noah.decroix3@gmail.com">Envoyez le formulaire</a>
+                    </button>
+
+                    <input type="reset">
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
